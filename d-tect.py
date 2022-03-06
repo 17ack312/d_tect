@@ -53,7 +53,7 @@ def dtect():
         option=sys.argv[1]
         if option=="0":
             headercheck = "on"
-        if option == "1":
+        elif option == "1":
             wpenumerator = "on"
         elif option == "2":
             filedetector = "on"
