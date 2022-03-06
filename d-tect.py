@@ -546,7 +546,8 @@ def dtect():
             host = "http://"+host
         print("[+] Checking Status...")
         alive()
-        responseheadercheck()
+        if headercheck=="on":
+            responseheadercheck()
         if xssscanner == "on":
             XSSscan(host)
         if sqliscanner == "on":
