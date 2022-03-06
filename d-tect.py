@@ -26,7 +26,7 @@ boldred            =        Style.BRIGHT+Fore.RED
 # -- Switches Start -- 
 wpenumerator    =        "off"
 filedetector    =          "off"
-headercheck        =          "on"
+headercheck        =          "off"
 subdomainscan    =        "off"
 portscan         =         "off"
 wpscan             =         "off"
@@ -51,6 +51,8 @@ def dtect():
         #print(" -- "+boldwhite+"Menu"+reset+" -- \n \n  1.     "+boldwhite+"WordPress Username Enumerator"+reset+"   \n  2.     "+boldwhite+"Sensitive File Detector"+reset+"        \n  3.     "+boldwhite+"Sub-Domain Scanner"+reset+"\n  4.     "+boldwhite+"Port Scanner"+reset+"        \n  5.     "+boldwhite+"Wordpress Scanner\n"+reset+"  6.     "+boldwhite+"Cross-Site Scripting [ XSS ] Scanner\n"+reset+"  7.    "+boldwhite+"Wordpress Backup Grabber\n"+reset+"  8.    "+boldwhite+"SQL Injection [ SQLI ] Scanner\n"+reset)
         #option = raw_input("[+] Select Option\n    > ")
         option=sys.argv[1]
+        if option=="0":
+            headercheck = "on"
         if option == "1":
             wpenumerator = "on"
         elif option == "2":
