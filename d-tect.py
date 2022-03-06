@@ -400,13 +400,13 @@ def dtect():
         lengthofIDs = len(max(listofIDs, key=len))
         if lengthofnames < 12:
             lengthofnames = 12
-        print "[i] "+green+"Found the following Username/s:"+reset
-        print "\t+-"+'-'.center(6, '-')+'-+-'+'-'.center(lengthofnames, '-')+"-+"
-        print "\t| "+'ID/s'.center(6, ' ')+' | '+'Username/s'.center(lengthofnames, ' ')+" |"
-        print "\t+-"+'-'.center(6, '-')+'-+-'+'-'.center(lengthofnames, '-')+"-+"
+        print("[i] "+green+"Found the following Username/s:"+reset)
+        print("\t+-"+'-'.center(6, '-')+'-+-'+'-'.center(lengthofnames, '-')+"-+")
+        print("\t| "+'ID/s'.center(6, ' ')+' | '+'Username/s'.center(lengthofnames, ' ')+" |")
+        print("\t+-"+'-'.center(6, '-')+'-+-'+'-'.center(lengthofnames, '-')+"-+")
         for i,d in zip(listofnames,listofIDs):
-            print '\t| '+d.center(6, ' ')+" | "+i.center(lengthofnames, ' ')+' |'
-        print "\t+-"+'-'.center(6, '-')+'-+-'+'-'.center(lengthofnames, '-')+"-+"
+            print('\t| '+d.center(6, ' ')+" | "+i.center(lengthofnames, ' ')+' |')
+        print ("\t+-"+'-'.center(6, '-')+'-+-'+'-'.center(lengthofnames, '-')+"-+")
         print("")
     def wpbackupscanner():
         backups = ['wp-config.php~','wp-config.php.txt','wp-config.php.save','.wp-config.php.swp','wp-config.php.swp','wp-config.php.swo','wp-config.php_bak','wp-config.bak','wp-config.php.bak','wp-config.save','wp-config.old','wp-config.php.old','wp-config.php.orig','wp-config.orig','wp-config.php.original','wp-config.original','wp-config.txt']
