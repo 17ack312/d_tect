@@ -443,7 +443,7 @@ def dtect():
             print("[i] The remote host redirects to '"+str(url)+"' \n    Following the redirection...")
             host = page.geturl()
         print("\n[+] Scan Started : "+lightgreen+"%s"+reset) % time.strftime("%c")
-        print "[+] Enumeration Usernames..."
+        print("[+] Enumeration Usernames...")
         T = 33
         found = 0
         listofusernames = []
